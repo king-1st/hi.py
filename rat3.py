@@ -17,9 +17,10 @@ while play:
             if event.button == 1:
               x_pos, y_pos = pygame.mouse.get_pos()
               pygame.draw.circle(background, (255,0,255), (x_pos, y_pos), 10)
+            
+    
         
 
-    
     pygame.display.update()
 
 pygame.quit()

@@ -16,7 +16,7 @@ to_y = 0
 play = True
 while play:
     deltaTime = fps.tick(60)
-    for event in pygame.event.get():
+    for event in pygame.event.get(): #받은 이벤트를 가져오는 코드
         if event.type == pygame.QUIT:
             play = False
         if event.type == pygame.KEYDOWN:
