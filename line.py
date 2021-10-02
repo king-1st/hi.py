@@ -19,11 +19,15 @@ while play:
     #pygame.draw.line(background, (0,0,0), (0,0),(480,360),5)
     #pygame.draw.line(background, (0,0,0), (0,360),(480,0),5)
 
+    print(i)
+   
     for i in range(0,480,30):
         pygame.draw.line(background, (0,0,0), (i,0),(i,360))
-    for i in range(0, 360, 30):
-        pygame.draw.line(background, (0,0,0), (0,i),(480,i))
+    #for i in range(0, 360, 30):
+        #pygame.draw.line(background, (0,0,0), (0,i),(480,i))
 
     pygame.display.update()
+
+
 
 pygame.quit

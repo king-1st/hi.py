@@ -18,7 +18,7 @@ while play:
 
     #원
     #pygame.draw.circle(화면, 색, 중심 좌표, 반지름, 선 굵기)
-    #pygame.draw.circle(background, (255,0,0), (240,180), 50)
+    pygame.draw.circle(background, (255,0,0), (240,180), 50)
     #pygame.draw.circle(background, (255,0,0), (240,180), 50, 5)
 
     #사각형

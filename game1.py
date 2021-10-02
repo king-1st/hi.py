@@ -25,19 +25,32 @@ while play:
                x = 100
                #pygame.draw.circle(background, (255,0,255), (100,160), 35)
         
+        
+        if event.type == pygame.KEYDOWN:            
+            l = abs(850 - x)
+            if 30< l < 45 :
+                if event.key == pygame.K_UP:
+                        dc = False
+                        print("good")
+            if l < 30 :
+                if event.key == pygame.K_UP:
+                        dc = False
+                        print("great")
+
+
+            if l > 45 :
+                if event.key == pygame.K_UP:
+                    print("fail")
+            
+                
+
     if dc == True:
         one = pygame.draw.circle(background, (255,0,255), (x,160), 35)
         x += 3
-        l = abs(850 - x)
-        if l < 20 :
-          if event.type == pygame.KEYDOWN:
-            if event.key == pygame.K_UP:
-                one = pygame.draw.circle(background, (255,255,255), (x,160), 35)
-        
-
-         
-        
-                
+                      
+                                                                                       
                  
     pygame.draw.circle(background, (0,0,255), (850,160), 40)
     pygame.display.update()
+
+pygame.quit()

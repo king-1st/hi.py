@@ -46,3 +46,8 @@ while play:
     pygame.display.update()
 
 pygame.quit()
+
+
+
+#list = [0,1,2,3]
+#list[0] =>0

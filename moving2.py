@@ -11,8 +11,8 @@ image_bg = pygame.image.load("C:/Users/kimsoo/Pictures/010.jpg")
 size_bg_width = background.get_size()[0]
 size_bg_height = background.get_size()[1]
 
-size_ai_width = background.get_rect().size[0]
-size_ai_height = background.get_rect().size[1]
+size_ai_width = image_ai.get_rect().size[0]
+size_ai_height = image_ai.get_rect().size[1]
 
 
 x_ai = size_bg_width/2 - size_ai_width/2
